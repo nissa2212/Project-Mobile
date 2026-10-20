@@ -33,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
             val user = binding.edtusername.text.toString()
             val pass = binding.edtpassword.text.toString()
 
-            // Sesuai contoh dosen: Username tidak boleh kosong dan Password harus sama dengan Username (atau disesuaikan Kredensialnya)
+            // Username tidak boleh kosong dan Password harus sama dengan Username (atau disesuaikan Kredensialnya)
             if (user.isNotEmpty() && user == pass) {
                 val editor = sharedPref.edit()
                 editor.putBoolean("isLogin", true)
